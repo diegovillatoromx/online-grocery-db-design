@@ -18,3 +18,28 @@ The EER diagram provides a visual representation of the database structure, show
 
 ## Repository Structure
 
+```plaintext
+online-grocery-db-design/
+├── datasets/
+│   ├── items.csv                # Items data
+│   ├── inventory.csv            # Inventory data
+│   ├── vendors.csv              # Vendors data
+│   ├── sales.csv                # Sales data
+│   ├── customers.csv            # Customer data
+├── diagrams/
+│   └── EER_diagram.png          # EER (Entity-Relationship) diagram
+├── sql/
+│   ├── ddl/
+│   │   └── create_tables.sql    # SQL script to create database tables
+│   ├── dml/
+│   │   └── insert_data.sql      # SQL script to insert data into tables
+│   └── queries/
+│       ├── inventory_queries.sql     # SQL queries related to inventory management
+│       ├── sales_queries.sql         # SQL queries related to sales analysis
+│       └── vendor_queries.sql        # SQL queries related to vendor analysis
+└── visualizations/
+    ├── inventory_trends.png     # Graph showing inventory trends
+    ├── sales_figures.png        # Graph showing sales figures
+    └── vendor_performance.png   # Graph showing vendor performance
+
+```
