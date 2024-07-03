@@ -21,11 +21,7 @@ The EER diagram provides a visual representation of the database structure, show
 ```plaintext
 online-grocery-db-design/
 ├── datasets/
-│   ├── items.csv                # Items data
-│   ├── inventory.csv            # Inventory data
-│   ├── vendors.csv              # Vendors data
-│   ├── sales.csv                # Sales data
-│   ├── customers.csv            # Customer data
+│   └── GreenspotDataset.csv     # Dataset
 ├── diagrams/
 │   └── EER_diagram.png          # EER (Entity-Relationship) diagram
 ├── sql/
