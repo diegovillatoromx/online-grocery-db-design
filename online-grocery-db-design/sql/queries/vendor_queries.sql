@@ -1,5 +1,3 @@
--- vendor_queries.sql
-
 -- 1. Total inventory cost per vendor
 SELECT 
     v.vendor_name AS VendorName,
