@@ -1,5 +1,3 @@
--- inventory_queries.sql
-
 -- 1. Current inventory of each item
 SELECT 
     i.description AS ItemDescription,
