@@ -12,7 +12,7 @@ The online grocery business is growing rapidly, and there is a need to transitio
 
 ## EER Diagram
 
-![EER Diagram](diagrams/EER_diagram.png)
+![EER Diagram](https://github.com/diegovillatoromx/online-grocery-db-design/blob/main/online-grocery-db-design/diagrams/EER.png)
 
 The EER diagram provides a visual representation of the database structure, showcasing the relationships between different entities such as products, inventory, sales, vendors, and customers.
 
