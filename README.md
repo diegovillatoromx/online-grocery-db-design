@@ -195,12 +195,12 @@ ORDER BY
 ```
 ###  Explanation:
 
-- Current inventory of each item:
+1. Current inventory of each item:
 
-**Objective*: To determine the total inventory quantity for each item.
-**Description*: This query calculates the total quantity of each item available in the inventory. It joins the `Inventory` table with the `Items` table on `item_id`, groups the results by the item description, and sorts them in descending order of total quantity on hand.
+* **Objective**: To determine the total inventory quantity for each item.
+* **Description**: This query calculates the total quantity of each item available in the inventory. It joins the `Inventory` table with the `Items` table on `item_id`, groups the results by the item description, and sorts them in descending order of total quantity on hand.
 
-- Inventory by location:
+2. Inventory by location:
 
-**Objective*: To understand the distribution of inventory across different locations.
-**Description*: This query provides a detailed view of the current inventory of each item by location. It joins the `Inventory` table with the `Items` table on `item_id`, groups the results by both location and item description, and orders them first by location and then by the total quantity on hand in descending order.
+* **Objective**: To understand the distribution of inventory across different locations.
+* **Description**: This query provides a detailed view of the current inventory of each item by location. It joins the `Inventory` table with the `Items` table on `item_id`, groups the results by both location and item description, and orders them first by location and then by the total quantity on hand in descending order.
