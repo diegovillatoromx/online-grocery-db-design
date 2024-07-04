@@ -260,7 +260,7 @@ WHERE
     s.sale_id IS NULL;
 ```
 
-#### Explanation:
+#### Explanation:
 
 1. Best-selling items:
 
