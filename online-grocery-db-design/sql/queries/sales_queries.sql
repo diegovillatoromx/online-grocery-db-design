@@ -1,5 +1,3 @@
--- sales_queries.sql
-
 -- 1. Best-selling items
 SELECT 
     i.description AS ItemDescription,
