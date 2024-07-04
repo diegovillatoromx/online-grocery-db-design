@@ -281,3 +281,29 @@ WHERE
 
 * **Objective**: To find items that have not been sold in the last 6 months.
 * **Description**: This query identifies items that have not had any sales in the past six months. It uses a left join between the `Items` and `Sales` tables on `item_id`, with an additional condition to only include sales within the last six months. Items with no matching sales records in this period are selected.
+
+
+### Vendors Queries
+
+```sql
+-- vendor_queries.sql
+
+-- 1. Total inventory cost per vendor
+SELECT 
+    v.vendor_name AS VendorName,
+    SUM(iv.cost * iv.quantity_on_hand) AS TotalInventoryCost
+FROM 
+    Inventory iv
+JOIN 
+    Vendors v ON iv.vendor_id = v.vendor_id
+GROUP BY 
+    v.vendor_name
+ORDER BY 
+    TotalInventoryCost DESC;
+```
+
+#### Explanation:
+
+1. Total inventory cost per vendor:
+* **Objective**: To calculate the total inventory cost associated with each vendor.
+* ***Description**: This query sums the total cost of inventory supplied by each vendor by multiplying the cost by the quantity on hand for each item. It joins the `Inventory` table with the `Vendors` table on `vendor_id`, groups the results by vendor name, and orders them by total inventory cost in descending order.
